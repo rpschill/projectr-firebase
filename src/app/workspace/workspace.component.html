@@ -1,0 +1,33 @@
+<ng-container>
+  <mat-toolbar class="workspace-header" color="primary">
+    <button
+      class="sidenav-button hamburger hamburger--spin"
+      [ngClass]="active ? 'is-active' : ''"
+      mat-icon-button
+      (click)="sidenav.toggle(); active = !active"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <h3>projectr</h3>
+    <button mat-icon-button color="secondary" (click)="signOut()">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+
+  </mat-toolbar>
+
+  <mat-sidenav-container class="workspace-sidenav-container">
+    <mat-sidenav
+      #sidenav
+      opened
+      mode="side"
+      class="workspace-sidenav"
+    ></mat-sidenav>
+
+    <mat-sidenav-content class="workspace-sidenav-content">
+      <h3>Workspace</h3>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>

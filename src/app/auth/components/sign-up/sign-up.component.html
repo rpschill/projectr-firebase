@@ -1,0 +1,39 @@
+<div class="display-table">
+  <div class="display-table-cell">
+    <h3>Sign up</h3>
+    <div class="form-group">
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Email address"
+        #userEmail
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        #userPwd
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="button"
+        class="btn btn-primary"
+        value="Sign up"
+        (click)="signUp(userEmail.value, userPwd.value)"
+      />
+    </div>
+    <div class="redirect-to-login">
+      <span>
+        Already have an account?
+        <span class="redirect" routerLink="/sign-in">
+          Log in
+        </span>
+      </span>
+    </div>
+  </div>
+</div>

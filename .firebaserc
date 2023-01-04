@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "projectr-95fc4": {
+      "hosting": {
+        "projectr-firebase": [
+          "projectr-95fc4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "projectr-95fc4"
+  }
+}

@@ -1,0 +1,34 @@
+.workspace-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.workspace-sidenav {
+  display: flex;
+  width: 275px;
+  align-items: center;
+  justify-content: center;
+}
+
+.workspace-sidenav-container {
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+}
+
+.workspace-sidenav-content {
+  // background-color: #ffffff;
+}
+
+.sidenav-button {
+  margin-right: 10px;
+
+  mat-icon {
+    color: #000;
+  }
+}
